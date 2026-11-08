@@ -30,11 +30,29 @@ jobs:
           python smart_scheduler.py
 
       - name: Commit and push updated deals feed
+        shell: bash
         run: |
-          git config --global user.name "SaleAlert Bot"
-          git config --global user.email "bot@salealert.com"
+          set -euo pipefail
+
+          git config user.name "SaleAlert Bot"
+          git config user.email "bot@salealert.com"
+
+          # Keep the generated feed outside the working tree.
+          cp deals_feed.json "$RUNNER_TEMP/deals_feed.json"
+
+          # Fetch the latest main branch before committing.
           git fetch origin main
-          git pull origin main --rebase || true
+          git reset --hard origin/main
+
+          # Restore only the generated feed.
+          cp "$RUNNER_TEMP/deals_feed.json" deals_feed.json
+
           git add deals_feed.json
-          git commit -m "Auto-update deals feed [skip ci]" || echo "No changes to commit"
-          git push origin main
+
+          if git diff --cached --quiet; then
+            echo "No feed changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Auto-update deals feed [skip ci]"
+          git push origin HEAD:main
