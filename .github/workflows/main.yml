@@ -33,6 +33,7 @@ jobs:
         run: |
           git config --global user.name "SaleAlert Bot"
           git config --global user.email "bot@salealert.com"
+          git pull origin main --rebase || true
           git add deals_feed.json
           git commit -m "Auto-update deals feed [skip ci]" || echo "No changes to commit"
-          git push
+          git push origin main
