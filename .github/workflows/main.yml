@@ -2,8 +2,8 @@ name: Run SaleAlert Scraper Daily
 
 on:
   schedule:
-    - cron: '0 6 * * *' # ہر روز صبح 6 بجے UTC پر خود بخود چلے گا
-  workflow_dispatch: # آپ جب چاہیں خود بٹن دبا کر بھی چلا سکتے ہیں
+    - cron: '0 6 * * *'
+  workflow_dispatch:
 
 jobs:
   run-scraper:
