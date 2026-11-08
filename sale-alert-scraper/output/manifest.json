@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": 1550507852,
+  "generatedAt": "2026-11-08T04:16:01Z",
+  "packs": [
+    {
+      "id": "national",
+      "version": 1,
+      "url": "packs/national.json.gz",
+      "sha256": "5c6adf4c2762c55f4374059588d14ecec86b3984d1a689a17fd48baa5e0e8931",
+      "sizeBytes": 55
+    }
+  ]
+}

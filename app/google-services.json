@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "518502687040",
+    "project_id": "salealertapp",
+    "storage_bucket": "salealertapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518502687040:android:c02243b23172ce17e09aa5",
+        "android_client_info": {
+          "package_name": "com.mfistudio.salealert"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKxl_txOb_DbilEmTgdclU2lsSWC8tooc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

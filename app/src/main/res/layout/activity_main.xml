@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <!-- APP TOOLBAR -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#D32F2F"
+            app:title="Sale Alert"
+            app:titleTextColor="#FFFFFF"
+            app:subtitle="Sialkot Live Discounts &amp; Sales"
+            app:subtitleTextColor="#FFCDD2" />
+
+        <!-- 100% FULL WIDTH VERTICAL NEWS TICKER BANNER CARD -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardTicker"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="4dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="2dp"
+            app:strokeColor="#E0E0E0"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔥 LIVE\nTICKER"
+                    android:textColor="#D32F2F"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="4dp" />
+
+                <!-- Vertical Upward Auto-Scrolling Ticker View spanning full width -->
+                <com.example.salealert.ui.VerticalTickerView
+                    android:id="@+id/verticalTicker"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- ADMOB BANNER AD VIEW (APPEARS EXACTLY ONCE) -->
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adViewBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="4dp"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+        <!-- 5 SCROLLABLE CATEGORY TABS (FOOD, CLOTHES, SHOES, MEDICINE, FURNITURE) -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            app:tabTextColor="#666666"
+            app:tabSelectedTextColor="#D32F2F"
+            app:tabIndicatorColor="#D32F2F"
+            app:tabIndicatorHeight="3dp"
+            app:tabMode="scrollable"
+            app:tabGravity="start">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🍔 Food" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👗 Clothes" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👟 Shoes" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💊 Medicine" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🛋️ Furniture" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- MAIN DEAL FEED CONTENT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#F8F9FA"
+        android:padding="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- LOCATION & REFRESH ROW -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="📍 Location: Sialkot (Detecting...)"
+                android:textColor="#2E7D32"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan Deals"
+                app:icon="@android:drawable/ic_popup_sync"
+                app:backgroundTint="#D32F2F"
+                style="@style/Widget.Material3.Button.Icon" />
+
+        </LinearLayout>
+
+        <!-- RECYCLERVIEW FEED FOR SORTED DEALS -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewFeed"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

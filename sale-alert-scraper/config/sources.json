@@ -1,0 +1,307 @@
+{
+  "sources": [
+    {
+      "id": "daraz_pk",
+      "name": "Daraz Pakistan",
+      "type": "brand",
+      "category": "Electronics",
+      "city": "All",
+      "permission_status": "pending_authorization",
+      "authorized_hostnames": [
+        "daraz.pk",
+        "www.daraz.pk"
+      ],
+      "feed_url": "https://www.daraz.pk/"
+    },
+    {
+      "id": "khaadi_pk",
+      "name": "Khaadi Pakistan",
+      "type": "brand",
+      "category": "Clothes",
+      "city": "All",
+      "permission_status": "pending_authorization",
+      "authorized_hostnames": [
+        "pk.khaadi.com",
+        "khaadi.com"
+      ],
+      "feed_url": "https://pk.khaadi.com/"
+    },
+    {
+      "id": "gulahmed_pk",
+      "name": "Gul Ahmed Ideas",
+      "type": "brand",
+      "category": "Clothes",
+      "city": "All",
+      "permission_status": "pending_authorization",
+      "authorized_hostnames": [
+        "gulahmedshop.com",
+        "www.gulahmedshop.com"
+      ],
+      "feed_url": "https://www.gulahmedshop.com/"
+    },
+    {
+      "id": "alkaram_studio",
+      "name": "Alkaram Studio",
+      "type": "brand",
+      "category": "Clothes",
+      "city": "All",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "sapphire_pk",
+      "name": "Sapphire",
+      "type": "brand",
+      "category": "Clothes",
+      "city": "All",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "ideas_gul_ahmed",
+      "name": "Ideas by Gul Ahmed",
+      "type": "brand",
+      "category": "Clothes",
+      "city": "All",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "limelight_pk",
+      "name": "Limelight",
+      "type": "brand",
+      "category": "Clothes",
+      "city": "All",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "engine_pk",
+      "name": "Engine",
+      "type": "brand",
+      "category": "Clothes",
+      "city": "All",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "outfitters_pk",
+      "name": "Outfitters",
+      "type": "brand",
+      "category": "Clothes",
+      "city": "All",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "breakout_pk",
+      "name": "Breakout",
+      "type": "brand",
+      "category": "Clothes",
+      "city": "All",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "edenrobe_pk",
+      "name": "Edenrobe",
+      "type": "brand",
+      "category": "Clothes",
+      "city": "All",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "bonanza_satrangi",
+      "name": "Bonanza Satrangi",
+      "type": "brand",
+      "category": "Clothes",
+      "city": "All",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "j_dot_pk",
+      "name": "J. (Junaid Jamshed)",
+      "type": "brand",
+      "category": "Clothes",
+      "city": "All",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "servis_shoes",
+      "name": "Servis",
+      "type": "brand",
+      "category": "Shoes",
+      "city": "All",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "bata_pk",
+      "name": "Bata Pakistan",
+      "type": "brand",
+      "category": "Shoes",
+      "city": "All",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "ndure_pk",
+      "name": "Ndure",
+      "type": "brand",
+      "category": "Shoes",
+      "city": "All",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "stylo_pk",
+      "name": "Stylo",
+      "type": "brand",
+      "category": "Shoes",
+      "city": "All",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "urbansole_pk",
+      "name": "Urban Sole",
+      "type": "brand",
+      "category": "Shoes",
+      "city": "All",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "hush_puppies_pk",
+      "name": "Hush Puppies Pakistan",
+      "type": "brand",
+      "category": "Shoes",
+      "city": "All",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "master_moltyfoam",
+      "name": "Master MoltyFoam",
+      "type": "brand",
+      "category": "Home",
+      "city": "All",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "interwood_pk",
+      "name": "Interwood",
+      "type": "brand",
+      "category": "Home",
+      "city": "All",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "kfc_pk",
+      "name": "KFC Pakistan",
+      "type": "brand",
+      "category": "Food",
+      "city": "All",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "mcdonalds_pk",
+      "name": "McDonald’s Pakistan",
+      "type": "brand",
+      "category": "Food",
+      "city": "All",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "hardees_pk",
+      "name": "Hardee’s Pakistan",
+      "type": "brand",
+      "category": "Food",
+      "city": "All",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "optp_pk",
+      "name": "OPTP",
+      "type": "brand",
+      "category": "Food",
+      "city": "All",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "local_sialkot_food",
+      "name": "Sialkot local restaurants",
+      "type": "merchant",
+      "category": "Food",
+      "city": "Sialkot",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    },
+    {
+      "id": "local_sialkot_retail",
+      "name": "Sialkot local shops",
+      "type": "merchant",
+      "category": "City Promotions",
+      "city": "Sialkot",
+      "permission_status": "discovery_required",
+      "authorized_hostnames": [],
+      "feed_url": "",
+      "note": "Monitoring candidate only. Verify official feed/permissions and source evidence before approval; no live offer is implied."
+    }
+  ]
+}

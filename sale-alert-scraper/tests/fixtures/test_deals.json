@@ -1,0 +1,37 @@
+[
+  {
+    "dealId": "synthetic-test-01",
+    "merchant": "Test Merchant PK",
+    "title": "Synthetic Test Deal 50% Off",
+    "description": "Test fixture for unit testing only",
+    "address": "Islamabad",
+    "categoryId": "Electronics",
+    "cityId": "All",
+    "originalPrice": 1000.0,
+    "salePrice": 500.0,
+    "currency": "PKR",
+    "imageUrl": "https://example.com/test.jpg",
+    "sourceUrl": "https://example.com/deal",
+    "latitude": null,
+    "longitude": null,
+    "startTime": 1762473600000,
+    "expiryTime": 1794009600000,
+    "verifiedAt": 1762473600000,
+    "sourceType": "brand",
+    "isSponsored": false,
+    "lastUpdated": 1762473600000,
+    "status": "active"
+  },
+  {
+    "dealId": "invalid-price-test",
+    "merchant": "Bad Merchant",
+    "title": "Inconsistent Price Deal",
+    "categoryId": "Clothes",
+    "originalPrice": 500.0,
+    "salePrice": 1000.0,
+    "currency": "PKR",
+    "sourceType": "brand",
+    "status": "active",
+    "lastUpdated": 1762473600000
+  }
+]
