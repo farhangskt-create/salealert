@@ -30,6 +30,7 @@ jobs:
           python smart_scheduler.py
 
       
+      
       - name: Commit and push updated deals feed
         shell: bash
         run: |
@@ -47,7 +48,7 @@ jobs:
           git add deals_feed.json
 
           if git diff --cached --quiet; then
-            echo "No changes to commit."
+            echo "No changes to commit"
             exit 0
           fi
 
